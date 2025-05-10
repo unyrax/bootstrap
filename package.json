@@ -1,0 +1,28 @@
+{
+  "name": "nextbs",
+  "version": "0.0.1",
+  "description": "Boîte à outils front-end et CSS utilitaire puissant, extensible et riche en fonctionnalités remplies de classes et pour créer n'importe quelle conception, directement dans votre balisage personnalisé avec Sass, des composants prédéfinis, et donner vie à vos projets grâce à de puissants plugins JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unyrax/nextbs.git"
+  },
+  "keywords": [
+    "css",
+    "postcss",
+    "sass",
+    "scss",
+    "javaScript",
+    "TypeScript",
+    "nextbs"
+  ],
+  "author": "Naïloth Esdras Nsounda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unyrax/nextbs/issues"
+  },
+  "homepage": "https://github.com/unyrax/nextbs#readme"
+}
