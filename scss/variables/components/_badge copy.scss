@@ -1,0 +1,101 @@
+.badge {
+  // scss-docs-start badge-css-vars
+  #{$prefix}badge-padding-x: #{$badge-padding-x};
+  #{$prefix}badge-padding-y: #{$badge-padding-y};
+  @include rfs($badge-font-size, #{$prefix}badge-font-size);
+  #{$prefix}badge-font-weight: #{$badge-font-weight};
+  #{$prefix}badge-color: #{$badge-color};
+  #{$prefix}badge-bg: #{$badge-bg};
+  #{$prefix}badge-hover-color: #{$badge-hover-color};
+  #{$prefix}badge-hover-bg: #{$badge-hover-bg};
+  #{$prefix}badge-hover-border-color: #{$badge-hover-border-color};
+  #{$prefix}badge-border-color: #{$badge-border-color};
+  #{$prefix}badge-border-width: #{$badge-border-width};
+  #{$prefix}badge-border-style: #{$badge-border-style};
+  #{$prefix}badge-border-radius: #{$badge-border-radius};
+  // scss-docs-end badge-css-vars
+
+  display: inline-block;
+  vertical-align: baseline;
+  width: fit-content;
+  text-align: center;
+  white-space: nowrap;
+  padding: var(#{$prefix}badge-padding-y) var(#{$prefix}badge-padding-x);
+  @include font-size(var(#{$prefix}badge-font-size));
+  font-weight: var(#{$prefix}badge-font-weight);
+  line-height: var(#{$prefix}text-xl5--line-height);
+  color: var(#{$prefix}badge-color);
+  border: var(#{$prefix}badge-border-width) var(#{$prefix}badge-border-style) var(#{$prefix}badge-border-color);
+  background-color: var(#{$prefix}badge-bg);
+  @include border-radius(var(#{$prefix}badge-border-radius));
+  @include gradient-bg();
+
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+}
+
+.badge-outline {
+  #{$prefix}badge-outline-color: rgb(var(#{$prefix}color-foreground));
+  #{$prefix}badge-outline-bg: transparent;
+  #{$prefix}badge-outline-border-color: rgb(var(#{$prefix}color-border));
+
+  #{$prefix}badge-color: var(#{$prefix}badge-outline-color);
+  #{$prefix}badge-bg: var(#{$prefix}badge-outline-bg);
+  #{$prefix}badge-border-color: var(#{$prefix}badge-outline-border-color);
+}
+
+// Ghost badges are transparent and only show the text color
+
+.badge-ghost {
+  #{$prefix}badge-ghost-color: rgb(var(#{$prefix}color-accent-foreground));
+  #{$prefix}badge-ghost-bg: transparent;
+  #{$prefix}badge-ghost-border-color: transparent;
+
+  #{$prefix}badge-color: var(#{$prefix}badge-ghost-color);
+  #{$prefix}badge-bg: var(#{$prefix}badge-ghost-bg);
+  #{$prefix}badge-border-color: var(#{$prefix}badge-ghost-border-color);
+
+  &:hover {
+    #{$prefix}badge-ghost-hover-color: rgb(var(#{$prefix}color-accent-foreground));
+    #{$prefix}badge-ghost-hover-bg: rgb(var(#{$prefix}color-accent));
+    #{$prefix}badge-ghost-hover-border-color: transparent;
+
+    #{$prefix}badge-color: var(#{$prefix}badge-ghost-hover-color);
+    #{$prefix}badge-bg: var(#{$prefix}badge-ghost-hover-bg);
+    #{$prefix}badge-border-color: var(#{$prefix}badge-ghost-hover-border-color);
+  }
+}
+
+.badge {
+  &-sm {
+    #{$prefix}badge-padding-x:   #{$badge-sm-padding-x};
+    #{$prefix}badge-padding-y:   #{$badge-sm-padding-y};
+    #{$prefix}badge-font-size:   #{$badge-sm-font-size};
+  }
+  
+  &-md {
+    #{$prefix}badge-padding-x:   #{$badge-md-padding-x};
+    #{$prefix}badge-padding-y:   #{$badge-md-padding-y};
+    #{$prefix}badge-font-size:   #{$badge-md-font-size};
+  }
+
+  &-lg {
+    #{$prefix}badge-padding-x:   #{$badge-lg-padding-x};
+    #{$prefix}badge-padding-y:   #{$badge-lg-padding-y};
+    #{$prefix}badge-font-size:   #{$badge-lg-font-size};
+  }
+  
+  &-xl {
+    #{$prefix}badge-padding-x:   #{$badge-xl-padding-x};
+    #{$prefix}badge-padding-y:   #{$badge-xl-padding-y};
+    #{$prefix}badge-font-size:   #{$badge-xl-font-size};
+  }
+}
+
+// Quick fix for badges in buttons
+.btn .badge {
+  position: relative;
+  top: -1px;
+}

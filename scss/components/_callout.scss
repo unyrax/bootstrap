@@ -1,0 +1,57 @@
+.callout {
+  // scss-docs-start callout-css-vars
+  #{$prefix}callout-color:     #{$callout-color};
+  #{$prefix}callout-bg:        #{$callout-backG};
+
+  #{$prefix}callout-padding-x: #{$callout-padding-x};
+  #{$prefix}callout-padding-y: #{$callout-padding-y};
+  #{$prefix}callout-radius:    #{$callout-radius};
+  
+  #{$prefix}callout-border:    #{$callout-border};
+  #{$prefix}callout-shadow-color:   #{$callout-shadow-color};
+  #{$prefix}callout-shadow:    #{$callout-shadow};
+  // scss-docs-end callout-css-vars
+
+  position: relative;
+  background-color: var(#{$prefix}callout-bg);
+  color: var(#{$prefix}callout-color);
+  padding: var(#{$prefix}callout-padding-y) var(#{$prefix}callout-padding-x);
+  border-radius: var(#{$prefix}callout-radius);
+  border: var(#{$prefix}callout-border);
+//   box-shadow: var(#{$prefix}callout-shadow);
+}
+
+.callout-title {
+  font-weight: #{$callout-title-font-weight};
+}
+
+.callout-description {
+  margin-top: #{$callout-margin-top};
+}
+
+// Provide class for links that match callouts
+.callout-link {
+  @extend .link;
+}
+
+// Provide class for links that match callouts
+.callout-link-hover {
+  @extend .link-hover;
+}
+
+// Dismissible callouts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.callout-dismissible {
+  padding-right: $callout-dismissible-padding-r;
+
+  // Adjust close link position
+  .callout-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: $stretched-link-z-index + 1;
+    padding: calc($callout-padding-y * 1.25) $callout-padding-x;
+  }
+}
