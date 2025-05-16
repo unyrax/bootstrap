@@ -1,0 +1,8 @@
+@mixin bsBanner($file) {
+  /*!
+   * #{$__nameFramework} #{$file} #{$__versionFramework} (#{$__webSiteFramework})
+   * Copyright #{$__copyrightFramework}
+   * The author #{$__authorsFramework}
+   * #{$__licenseTypeFramework} #{$__licenseLinkFramework}
+   */
+}
