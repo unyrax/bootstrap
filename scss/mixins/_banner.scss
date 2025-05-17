@@ -1,3 +1,14 @@
+$__nameFramework:         "nextbs" !default;
+$__versionFramework:      "v0.0.1" !default;
+$__webSiteFramework:      "https://nextbs.com/" !default;
+$__copyrightStart:        "2025" !default;
+$__copyrightEnd:          "2026" !default;
+$__copyrightFramework:    "#{$__copyrightStart} - #{$__copyrightEnd}" !default;
+$__authorsFramework:      "Naïloth Esdras Nsounda" !default;
+$__licenseTypeFramework:  "Licensed under MIT" !default;
+$__licenseLinkFramework:  "(https://github.com/twbs/bootstrap/blob/main/LICENSE)" !default;
+
+
 @mixin bsBanner($file) {
   /*!
    * #{$__nameFramework} #{$file} #{$__versionFramework} (#{$__webSiteFramework})

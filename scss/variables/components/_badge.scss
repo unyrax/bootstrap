@@ -1,0 +1,36 @@
+// Badges
+
+// scss-docs-start badge-variables
+$badge-padding-y:     calc(1rem * 0.35) !default;
+$badge-padding-x:     calc(1rem * 0.65) !default;
+$badge-font-size:     var(#{$prefix}text-xs) !default;
+$badge-font-weight:   var(#{$prefix}font-weight-bold) !default;
+$badge-color:         rgb(var(#{$prefix}color-primary-foreground)) !default;
+$badge-bg:            rgb(var(#{$prefix}color-primary)) !default;
+
+$badge-hover-color:   rgb(var(#{$prefix}color-primary-foreground)) !default;
+$badge-hover-bg:      rgba(var(#{$prefix}color-primary), .85) !default;
+
+$badge-border-color:        transparent !default;
+$badge-hover-border-color:  transparent !default;
+
+$badge-border-style:  var(#{$prefix}default-style) !default;
+$badge-border-width:  var(#{$prefix}default-width) !default;
+$badge-border-radius: var(#{$prefix}radius) !default;
+
+$badge-sm-padding-x:   .35rem;
+$badge-sm-padding-y:   .15rem;
+$badge-sm-font-size: var(#{$prefix}text-xs);
+
+$badge-md-padding-x:   .75rem;
+$badge-md-padding-y:   .35rem;
+$badge-md-font-size: var(#{$prefix}text-sm);
+
+$badge-lg-padding-x:   1.25rem;
+$badge-lg-padding-y:   .55rem;
+$badge-lg-font-size: var(#{$prefix}text-md);
+
+$badge-xl-padding-x:   1.35rem;
+$badge-xl-padding-y:    .65rem;
+$badge-xl-font-size: var(#{$prefix}text-lg);
+// scss-docs-end badge-variables

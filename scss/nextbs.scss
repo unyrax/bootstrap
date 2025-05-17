@@ -1,9 +1,5 @@
 // scss-docs-start import-stack
 
-// 6. @import "configurations";
-//    - Centralized configuration for project-wide settings and overrides.
-@import "configs";
-
 // 1. @import "mixins/banner";
 //    - Imports the banner mixin, which is used for creating banner styles.
 @import "mixins/banner";
@@ -13,6 +9,10 @@
 // 2. @import "functions";
 //    - Includes custom SCSS functions used throughout the project for reusable logic.
 @import "functions";
+
+// 6. @import "configurations";
+//    - Centralized configuration for project-wide settings and overrides.
+@import "configs";
 
 // 3. @import "variables";
 //    - Defines global SCSS variables for consistent styling (e.g., colors, spacing, etc.).

@@ -1,0 +1,50 @@
+// t r b l 
+$annonce-padding-xs:           .125rem .750rem .125rem .25rem  !default;
+$annonce-padding-sm:           .250rem 1.00rem .250rem .250rem  !default;
+$annonce-padding-md:           .375rem 1.25rem .375rem .375rem  !default;
+$annonce-padding-lg:           .500rem 1.50rem .500rem .500rem  !default;
+
+$annonce-padding:              .125rem .50rem  !default;
+$annonce-gap:                  .75rem  !default;
+$annonce-font-size:            1rem !default;
+$annonce-line-height:          1.5 !default;
+$annonce-font-weight:          400 !default;
+
+$annonce-border-width:         1px !default;
+$annonce-border-style:         solid !default;
+$annonce-border-color:         rgb(var(#{$prefix}color-border)) !default;
+$annonce-border:               $annonce-border-width $annonce-border-style $annonce-border-color !default;
+
+$annonce-color:                rgb(var(#{$prefix}color-primary)) !default;
+$annonce-bg:                   rgb(var(#{$prefix}color-primary-foreground)) !default;
+$annonce-shadow:               0 1px 2px 0 rgb(var(#{$prefix}color-primary), .065) !default;
+$annonce-border-radius:        var(#{$prefix}radius) !default;
+
+$annonce-badge-padding-x:      .55rem  !default;
+$annonce-badge-padding-y:      .125rem !default;
+$annonce-badge-color:          rgb(var(#{$prefix}color-primary-foreground)) !default;
+$annonce-badge-bg:             rgb(var(#{$prefix}color-primary)) !default;
+$annonce-badge-border-radius:  calc(var(#{$prefix}radius) - 3px) !default;
+
+
+$annonce-badge-padding-xs:     .125rem .750rem .125rem .125rem  !default;
+$annonce-badge-padding-sm:     .250rem 1.00rem .250rem .250rem  !default;
+$annonce-badge-padding-md:     .375rem 1.25rem .375rem .375rem  !default;
+$annonce-badge-padding-lg:     .500rem 1.50rem .500rem .500rem  !default;
+
+
+$annonce-badge-xs-font-size:    var(#{$prefix}text-xs)  !default;
+$annonce-badge-xs-line-height:  var(#{$prefix}text-xs--line-height)  !default;
+
+$annonce-badge-sm-font-size:    var(#{$prefix}text-sm)  !default;
+$annonce-badge-sm-line-height:  var(#{$prefix}text-sm--line-height)  !default;
+
+$annonce-badge-md-padding-x:    .65rem  !default;
+$annonce-badge-md-padding-y:    .185rem  !default;
+$annonce-badge-md-font-size:    var(#{$prefix}text-sm)  !default;
+$annonce-badge-md-line-height:  var(#{$prefix}text-sm--line-height)  !default;
+
+$annonce-badge-lg-padding-x:    .75rem  !default;
+$annonce-badge-lg-padding-y:    .25rem  !default;
+$annonce-badge-lg-font-size:    var(#{$prefix}text-base)  !default;
+$annonce-badge-lg-line-height:  var(#{$prefix}text-base--line-height)  !default;
